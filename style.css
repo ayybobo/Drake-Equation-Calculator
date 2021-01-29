@@ -1,0 +1,190 @@
+:root {
+  --offWhite: #f2f2f2;
+}
+
+*,
+**,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(./images/milkyway.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+form {
+  margin: 150px 29% 29%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--offWhite);
+}
+
+input {
+  width: 50px;
+  border: none;
+  background: var(--offWhite);
+  outline: none;
+  text-align: right;
+}
+
+#result {
+  margin: 8px;
+  width: 130px;
+}
+
+label {
+  font-size: 0.7rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+label p {
+  display: inline;
+  margin-left: 10px;
+}
+
+h1 {
+  color: var(--offWhite);
+  text-align: center;
+  margin: 150px 50px;
+  text-shadow: 4px 4px 8px black;
+  letter-spacing: 8px;
+}
+
+span {
+  font-size: 1.3rem;
+  display: inline-block;
+  width: 50px;
+}
+
+button {
+  margin: 4px;
+  margin-top: 10px;
+  width: 6rem;
+  height: 1.5rem;
+  border-color: var(--offWhite);
+  color: var(--offWhite);
+  background: transparent;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  outline: none;
+}
+
+button:hover {
+  color: black;
+  background: var(--offWhite);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  form {
+    font-size: 2rem;
+    margin: auto;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+  input {
+    height: 20px;
+  }
+}
+
+@media (max-width: 1014px) {
+  h1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 880px) {
+  h1 {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  form {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    margin: auto;
+    padding: 5px;
+    font-size: 0.5rem;
+  }
+  h1 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  span {
+    width: 45px;
+  }
+}
+
+@media (max-height: 600px) {
+  span {
+    font-size: 1rem;
+    width: 40px;
+  }
+  input {
+    height: 10px;
+    width: 20px;
+  }
+  label {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    background-size: auto;
+  }
+  label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  label {
+    font-size: 0.8rem;
+  }
+  h1 {
+    margin: 50px;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drake Equation</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Drake Equation Calculator</h1>
+        <form id="form">
+            <div>
+                <label for="a"><span>R= </span><input value="2" type="text" id="a"><p>The number of suitable stars -- stars like the sun -- that form in our galaxy per year.</p></label>
+            </div>
+            <div>
+                <label for="b"><span>F<sub>p</sub>= </span><input value="0.81" type="text" step=".001" id="b"><p>The fraction of these stars that have planets. (1 = 100 percent. .25 = 25 percent.)</p></label>
+            </div>
+            <div>
+                <label for="c"><span>N<sub>e</sub>= </span><input value="0.45" type="text" step=".001" id="c"><p>The number of Earth-like planets -- meaning planets that have liquid water -- within each planetary system.</p></label>
+            </div>
+            <div>
+                <label for="d"><span>F<sub>l</sub>= </span><input value="0.2" type="text" step=".001" id="d"><p>The fraction of Earth-like planets where life develops.</p></label>
+            </div>
+            <div>
+                <label for="e"><span>F<sub>i</sub>= </span><input value="0.15" type="text" step=".001" id="e"><p>The fraction of life sites where intelligent life develops.</p></label>
+            </div>
+            <div>
+                <label for="f"><span>F<sub>c</sub>= </span><input value="0.68" type="text" step=".001" id="f"><p>The fraction of intelligent life sites where communication develops.</p></label>
+            </div>
+            <div>
+                <label for="g"><span>L= </span><input value="9000" type="text" step=".0001" id="g"><p>The "lifetime" (in years) of a communicative civilization.</p></label>
+            </div>
+            <div class="buttons">
+                <button onclick="calc();" id="calculate-btn" type="button" value="submit">Calculate</button>
+                <button type="reset" id="clear-btn">Clear</button>   
+            </div>
+            <div>
+                <label><span>N= </span>
+                The approximate number of communicative civilizations within the Milky Way today.</label>
+                <input type="text" id="result"/>
+            </div>
+        </form>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
