@@ -23,10 +23,38 @@ html {
 }
 
 form {
+  position: relative;
   margin: 150px 29% 29%;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(45deg, rgb(34, 34, 93), rgba(9, 8, 46, 1));
   color: var(--offWhite);
+}
+
+form:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+form:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(60px);
+}
+
+form:before,
+form:after {
+  background: linear-gradient(235deg, #1100ff, #ff0000, #00ff0d);
 }
 
 input {
